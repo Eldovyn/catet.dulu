@@ -19,6 +19,18 @@
         </div>
         <div class="flex flex-col gap-2">
             <label for="password" class="text-sm font-semibold">Password</label>
+            <div class="relative w-full">
+                <input type="text" placeholder="Type here"
+                    class="input w-full border border-gray-200 pr-11
+           focus:outline-none! focus:ring-0! focus:ring-offset-0! focus:shadow-none!" />
+
+                <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center">
+                    <i class="hgi hgi-stroke hgi-view cursor-pointer"></i>
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="password" class="text-sm font-semibold">Confirm Password</label>
             <div class="flex flex-col gap-1">
                 <div class="relative w-full">
                     <input type="text" placeholder="Type here"
