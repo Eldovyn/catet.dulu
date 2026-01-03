@@ -1,12 +1,17 @@
 @extends('layouts.auth')
 
-@section('title', 'Sign In')
+@section('title', 'Sign Up')
 
 @section('container')
     <form action="" class="p-6 rounded-md w-100 gap-2 flex flex-col border border-gray-200">
         <h1 class="font-semibold text-2xl">Welcome back!</h1>
         <p class="text-sm text-gray-500">Enter your credentials to access your account</p>
         <br>
+        <div class="flex flex-col gap-2">
+            <label for="username" class="text-sm font-semibold">Username</label>
+            <input type="text" placeholder="Type here"
+                class="input w-full border border-gray-200 focus:outline-none! focus:ring-0! focus:ring-offset-0! focus:shadow-none!" />
+        </div>
         <div class="flex flex-col gap-2">
             <label for="email" class="text-sm font-semibold">Email</label>
             <input type="text" placeholder="Type here"
@@ -30,10 +35,9 @@
         </div>
         <br>
         <div class="flex flex-col gap-2">
-            <button class="btn btn-active" type="submit">Sign In</button>
-            <p class="text-[12px] text-center">Don't have an account? <a href="/register"
-                    class="text-blue-500 underline">Sign
-                    Up</a></p>
+            <button class="btn btn-active" type="submit">Sign Up</button>
+            <p class="text-[12px] text-center">Don't have an account? <a href="/login" class="text-blue-500 underline">Sign
+                    In</a></p>
         </div>
     </form>
 @endsection
